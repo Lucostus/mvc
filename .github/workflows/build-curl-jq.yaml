@@ -36,6 +36,7 @@ jobs:
           tags: |
             type=schedule
             type=raw,value=curl-jq-${{github.sha}}
+            type=raw,value=curl-jq
 
       - name: Buildah Action
         id: build-image
